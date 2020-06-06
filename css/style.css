@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "anton";
+  src: url(../fonts/Anton/Anton-Regular.ttf);
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+body {
+  background: url(../img/forest-931706_1280.jpg) no-repeat 0px 0px;
+  background-size: cover;
+  height: 100vh;
+  font-family: "roboto";
+  font-size: 18px;
+  line-height: 24px;
+}
+
+section {
+  background-color: white;
+  width: 750px;
+  height: 50%;
+  margin: 0 auto;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 300px repeat(1, 1fr);
+}
+
+.grid1 {
+  grid-column: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  position: relative;
+}
+.grid1 img {
+  border-radius: 100px;
+  border: 3px solid #d3cc89;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.grid2 {
+  grid-column: 2;
+  grid-row: 1;
+  border-bottom: 3px solid #d3cc89;
+  margin: 24px 24px 0;
+}
+h1 {
+  font-size: 2em;
+  line-height: 1em;
+}
+h1 span {
+  font-weight: lighter;
+}
+.grid2 p {
+  padding-bottom: 24px;
+}
+
+.grid3 {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 24px;
+}
+
+.grid3 ul li {
+  display: flex;
+  justify-content: left;
+  padding: 12px 0;
+}
+.grid3 ul li h4 {
+  width: 100px;
+  color: #d3cc89;
+}
+.grid3 ul li a {
+  text-decoration: none;
+  color: #d3cc89;
+}
+.grid3 ul li a:hover {
+  color: #475745;
+}
+.grid4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 3;
+  background-color: #c4c57f;
+  padding: 24px;
+}
+.grid4 .media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 12px;
+}
+.grid4 .media li {
+  text-align: center;
+}
+.grid4 .media li a {
+  font-size: 2em;
+  color: white;
+  /* margin: 12px 48px; */
+}
+.grid4 .media li a:hover {
+  color: #475745;
+}
